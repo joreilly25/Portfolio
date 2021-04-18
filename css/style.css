@@ -1,0 +1,263 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#main {
+    position: relative;
+    background-image: url(../images/main-bg.jpg);
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navbar {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+#main-content {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#second-content{
+    margin-top: 50px;
+}
+
+#main-content h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 0.9em;
+    font-weight: 700;
+}
+
+#main-content h2 {
+    color: #a0cfee;
+    font-size: 3em;
+}
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: 0.5s ease all;
+    margin-top: 25px;
+}
+
+.btn-rounded-white:hover {
+    color: #3498db;
+    background: #fff;
+    text-decoration: none;
+}
+
+.btn-rounded-white-inverse {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #3498db;
+    border-radius: 30px;
+    transition: 0.5s ease all;
+    margin-top: 25px;
+}
+
+.btn-rounded-white-inverse:hover {
+    color: #fff;
+    background: #3498db;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#main-overlay {
+    position: absolute;
+    height: 100%;
+    max-height: 1080px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(33, 125, 187, 0.8);
+    z-index: 1;
+}
+
+#about {
+    padding: 75px 15px;
+    border-bottom: 1px solid #ddc9d9;
+}
+
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid #ddc9d9;
+    text-align: center;
+}
+
+.project-item {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ddc9d9;
+    background-color: #fff;
+}
+
+.project-image {
+    max-width: 300px;
+    padding: 0;
+}
+
+.project-info {
+    margin-left: 45px;
+}
+
+#contact {
+    padding: 50px 15px;
+    background: #3498db;
+    text-align: center;
+}
+
+.contactheader {
+    color: #fff;
+}
+
+#contactform {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactform input,
+textarea {
+    color: #fff !important;
+}
+
+#copyright {
+    padding: 50px 15px;
+    color: #808080;
+}
+
+#copyright a {
+    color: #808080;
+}
+
+#to-top {
+    cursor: pointer;
+}
+
+.fab {
+    margin-right: 15px;
+}
+
+input[type="email"] {
+    margin-bottom: 10px;
+    background-color: #1d6fa5;
+    border: none;
+}
+
+input[type="email"]:focus {
+    background-color: #16527a;
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    color: #fff !important;
+}
+
+#formmessage {
+    background-color: #1d6fa5;
+    border: none;
+}
+
+#formmessage:focus {
+    background-color: #16527a;
+}
+
+.contact-btn {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #3498db;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.heading {
+    margin-bottom: 50px;
+}
+.background-alt {
+    background: #f2f2f5;
+}
+
+@media only screen and (max-width: 600px) {
+    #main,
+    #main-overlay {
+        height: 50vh;
+        min-height: auto;
+    }
+
+    #main-content h1 {
+        font-size: 2em;
+    }
+
+    #main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .navbar {
+        position: fixed;
+        right: 0;
+        display: inline;
+    }
+
+    .fab,
+    .fas {
+        margin-top: 20px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .project-image {
+        display: none;
+    }
+    .project-info {
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .nav-link:hover {
+        background-color: #ddc9d9;
+        border-radius: 4px;
+        color: #3498db !important;
+    }
+}
