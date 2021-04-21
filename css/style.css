@@ -339,3 +339,23 @@ footer {
         text-align: center;
     }
 }
+
+@media screen and (min-width: 375px)
+              and (orientation: landscape) {
+    .navbar {
+        font-size: initial;
+    }
+
+    #main-content {
+        flex-flow: row;
+        align-items: center;
+    }
+
+    section {
+        flex-basis: 50%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}
