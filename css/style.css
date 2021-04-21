@@ -117,7 +117,7 @@ section a {
 
 #project1, #project2 {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 300px;
     grid-template-columns: 300px 1fr;
     grid-template-areas: 
         "projectImg  projectInfo";
@@ -137,7 +137,7 @@ section a {
     grid-area: projectInfo;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -153,6 +153,8 @@ section a {
 
 .projectDesc {
     grid-area: projectDesc;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .projectLink {
@@ -165,4 +167,28 @@ section a {
     grid-area: projectImg;
     border-top-left-radius: 10px;
     max-width: 300px;
+}
+
+@media screen and (max-width: 812px) {
+    #project1, #project2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "."
+        "projectInfo";
+    }
+    .projectContainer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .projectDesc {
+        text-align: center;
+    }
+
+    .projectImg {
+        display: none;
+    }
 }
