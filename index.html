@@ -27,13 +27,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b773e72ff8.js"></script>
         <title>Justin O&apos;Reilly - Portfolio</title>
     </head>
@@ -42,39 +39,22 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNMFG6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-        <div class="d-flex justify-content-center" id="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/joreilly25/100-days-of-code" class="nav-link" target="_blank">100 Days of Code</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="container-fluid" id="main">
-            <div class="container-fluid" id="main-content">
+
+    <nav class="navbar">
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutMe">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+</nav>
+        <main id="main-content">
+            <section id="first-content">
                 <h1>Justin O&apos;Reilly</h1>
                 <h2>Web Developer</h2>
                 <a
@@ -83,7 +63,8 @@
                     class="btn-rounded-white"
                     >Download Resume</a
                 >
-                <div id="second-content" class="container-fluid">
+                </section>
+                <section id="second-content">
                 <h1>100 Days of Code!</h1>
                 <h2>I've commited to 100 days straight of coding!</h2>
                 <a
@@ -92,78 +73,50 @@
                     class="btn-rounded-white"
                     >See my progress</a
                 >
-            </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="main-overlay"></div>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2 class="heading">About Me</h2>
-                    </div>
-                    <div class="col-md-8">
-                        <p>
-                            IT Professional with 9+ years of experience. Looking
-                            to break into the Web Development field. Thank you
-                            for taking the time to visit my site, I hope to hear
-                            from you soon!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
+    </main>
+    <div id="aboutMe">
+        <h2 class="heading">About Me</h2>
+        <p>
+            IT Professional with 9+ years of experience. Looking
+            to break into the Web Development field. Thank you
+            for taking the time to visit my site, I hope to hear
+            from you soon!
+        </p>
+    </div>
         <div id="projects" class="background-alt">
             <h2 class="heading">Projects</h2>
-            <div class="container">
-                <div class="row project-item">
-                    <div class="col-md-6 project-image">
-                        <img src="images/cakeulator.gif" alt="" />
-                    </div>
-                    <div class="col-md-6 project-info my-auto">
-                        <h2>Cakeulator</h2>
-                        <p>
+            <div class="projectContainer">
+                    <div id="project1">
+                        <img src="images/cakeulator.gif" alt="" class="projectImg" />
+                        <div class="projectInfo">
+                        <h2 class="projectHeader">Cakeulator</h2>
+                        <p class="projectDesc">
                             Web app to aid in estimating cake costs for guests.
                         </p>
                         <a
                             href="https://github.com/joreilly25/cakeulator"
                             target="_blank"
+                            class="projectLink"
                             >Go to project</a
                         >
                     </div>
-                </div>
-                <div class="row project-item">
-                    <div class="col-md-6 project-image">
-                        <img src="images/github.png" alt="" />
                     </div>
-                    <div class="col-md-6 project-info my-auto">
-                        <h2>More Projects</h2>
-                        <p>
+                    <div id="project2">
+                        <img src="images/github.png" alt="" class="projectImg" />
+                        <div class="projectInfo">
+                        <h2 class="projectHeader">More Projects</h2>
+                        <p class="projectDesc">
                             Please view my github for other projects.
                         </p>
                         <a
                             href="https://github.com/joreilly25/"
                             target="_blank"
+                            class="projectLink"
                             >View more projects</a
                         >
                     </div>
-                </div>
-                <!--<div class="row project-item">
-                    <div class="col-md-6 project-image">
-                        <img src="images/gregslist.gif" alt="" />
                     </div>
-                    <div class="col-md-6 project-info my-auto">
-                        <h2>Greg's List</h2>
-                        <p>
-                            This is a simple hand coded craigs's list landing
-                            page.
-                        </p>
-                        <a
-                            href="https://github.com/joreilly25/gregs_list"
-                            target="_blank"
-                            >Go to Project</a
-                        >
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -171,7 +124,6 @@
             <div id="contactform">
                 <h2 class="contactheader">Send me a message</h2>
                 <form action="send_form.py" method="POST">
-                    <div class="form-group container">
                         <input
                             name="email"
                             type="email"
@@ -188,27 +140,24 @@
                         ></textarea>
                         <button
                             type="submit"
-                            class="btn btn-primary contact-btn"
+                            class="contact-btn"
                         >
                             Send
                         </button>
-                    </div>
                 </form>
             </div>
         </div>
-        <footer id="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 text-center">
+        <footer>
+                    <div class="copyright">
                         <p>Copyright &copy; 2021 Justin O&apos;Reilly</p>
                     </div>
-                    <div class="col-sm-2 text-center">
+                    <div class="toTheTop">
                         <i
                             class="far fa-arrow-alt-circle-up fa-2x"
                             id="to-top"
                         ></i>
                     </div>
-                    <div class="col-sm-5 text-center">
+                    <div class="socialLinks">
                         <a
                             href="https://www.github.com/joreilly25"
                             target="_blank"
@@ -225,30 +174,10 @@
                             ><i class="fab fa-twitter fa-lg"></i
                         ></a>
                     </div>
-                </div>
-            </div>
-            <div class="text-right">Github icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
-        <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"
-        ></script>
+        <div class="specialThanks">Github icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
