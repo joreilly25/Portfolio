@@ -58,6 +58,7 @@ body {
 section {
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
 }
 
 section a {
@@ -305,6 +306,7 @@ footer {
         "."
         "projectInfo";
     }
+
     .projectContainer {
         padding-right: 15px;
         padding-left: 15px;
