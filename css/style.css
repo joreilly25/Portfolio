@@ -166,6 +166,7 @@ section a {
 .projectImg {
     grid-area: projectImg;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     max-width: 300px;
 }
 
