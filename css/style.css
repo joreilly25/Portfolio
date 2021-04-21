@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.nav-item {
+    padding-left: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
