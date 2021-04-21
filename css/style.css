@@ -1,5 +1,10 @@
+body {
+    font-family: sans-serif;
+}
+
 .navbar {
     display: flex;
+    position: absolute;
     font-size: 24px;
     justify-content: center;
 }
@@ -12,8 +17,67 @@
 
 .nav-item {
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(33, 125, 187, 0.8),
+            rgba(33, 125, 187, 0.8)
+        ),
+        url(/images/main-bg-orig-small.jpg);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#main-content h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+#main-content h2 {
+    padding-top: 15px;
+    font-size: 3em;
+    color: #a0cfee;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section a {
+    text-decoration: none;
+}
+
+.btn-rounded-white {
+    display: flex;
+    align-self: center;
+    max-width: 200px;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    transition: 0.5s ease all;
+    margin-top: 25px;
+}
+
+.btn-rounded-white:hover {
+    color: #3498db;
+    background: #fff;
     text-decoration: none;
 }
