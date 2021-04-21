@@ -294,7 +294,8 @@ footer {
     color: #808080;
 }
 
-@media screen and (max-device-width: 812px) {
+@media screen and (max-device-width: 812px)
+              and (orientation: portrait) {
     #project1, #project2 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -341,6 +342,7 @@ footer {
 }
 
 @media screen and (min-device-width: 375px)
+              and (max-device-width: 812px) 
               and (orientation: landscape) {
     .navbar {
         font-size: initial;
