@@ -3,6 +3,7 @@ body {
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     position: absolute;
     font-size: 24px;
@@ -11,7 +12,6 @@ body {
 
 .navbar ul {
     display: flex;
-    width: 100vw;
     justify-content: center;
 }
 
@@ -261,7 +261,38 @@ textarea.form-control {
     box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
 }
 
+footer {
+    background-color: #f2f2f5;
+    color: #808080;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
 
+.socialLinks a{
+    margin-right: 15px;
+}
+
+.toTheTop {
+    background-color: #f2f2f5;
+    color: #808080;
+    text-align: center;
+    cursor: pointer;
+}
+
+.specialThanks {
+    padding-top: 30px;
+    background-color: #f2f2f5;
+    color: #808080;
+    text-align: right;
+}
+
+.specialThanks a {
+    color: #808080;
+}
 
 @media screen and (max-width: 812px) {
     #project1, #project2 {
@@ -284,5 +315,10 @@ textarea.form-control {
 
     .projectImg {
         display: none;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
