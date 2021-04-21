@@ -88,6 +88,7 @@ section a {
     height: 200px;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 1px solid #ddc9d9;
 }
 
 #aboutMe h2 {
@@ -102,6 +103,66 @@ section a {
     
 }
 
-#projects img {
+#projects {
+    background: #f2f2f5;
+    padding-top: 50px;
+}
+
+.projectContainer {
+    max-width: 900px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background-color: #f2f2f5;
+}
+
+#project1, #project2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+        "projectImg  projectInfo";
+    background-color: #fff;
+    box-shadow: 0 0 10px #ddc9d9;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#projects .heading {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projectInfo {
+    grid-area: projectInfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projectHeader {
+    grid-area: projectHeader;
+    font-size: 2em;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectDesc {
+    grid-area: projectDesc;
+}
+
+.projectLink {
+    grid-area: projectLink;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.projectImg {
+    grid-area: projectImg;
+    border-top-left-radius: 10px;
     max-width: 300px;
 }
