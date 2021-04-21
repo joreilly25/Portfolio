@@ -294,7 +294,7 @@ footer {
     color: #808080;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-device-width: 812px) {
     #project1, #project2 {
         padding-top: 10px;
         padding-bottom: 10px;
