@@ -341,7 +341,6 @@ footer {
 }
 
 @media screen and (min-device-width: 375px)
-              and (max-device-width: 812px) 
               and (orientation: landscape) {
     .navbar {
         font-size: initial;
