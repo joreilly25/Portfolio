@@ -27,37 +27,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
-        />
         <link rel="stylesheet" href="css/style.css" />
         <script src="https://kit.fontawesome.com/b773e72ff8.js"></script>
         <title>Justin O&apos;Reilly - Portfolio</title>
     </head>
     <body>
-        <!--TESTING-->
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNMFG6"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-        <div class="d-flex justify-content-center" id="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+        <div class="" id="navigation">
+            <nav class="navbar">
+                <div id="navbarContainer">
+                    <ul>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -74,8 +56,8 @@
                 </div>
             </nav>
         </div>
-        <div class="container-fluid" id="main">
-            <div class="container-fluid" id="main-content">
+        <main id="main-content">
+            <div class="container">
                 <h1>Justin O&apos;Reilly</h1>
                 <h2>Web Developer</h2>
                 <a
@@ -84,7 +66,7 @@
                     class="btn-rounded-white"
                     >Download Resume</a
                 >
-                <div id="second-content" class="container-fluid">
+                <section id="second-content">
                 <h1>100 Days of Code!</h1>
                 <h2>I've commited to 100 days straight of coding!</h2>
                 <a
@@ -93,35 +75,27 @@
                     class="btn-rounded-white"
                     >See my progress</a
                 >
+            </section>
             </div>
-            </div>
-        </div>
-        <div class="container-fluid" id="main-overlay"></div>
+        <div id="main-overlay"></div>
         <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2 class="heading">About Me</h2>
-                    </div>
-                    <div class="col-md-8">
-                        <p>
-                            IT Professional with 9+ years of experience. Looking
-                            to break into the Web Development field. Thank you
-                            for taking the time to visit my site, I hope to hear
-                            from you soon!
-                        </p>
-                    </div>
+                <div id="aboutMe">
+                    <h2 class="heading">About Me</h2>
+                    <p>
+                        IT Professional with 9+ years of experience. Looking
+                        to break into the Web Development field. Thank you
+                        for taking the time to visit my site, I hope to hear
+                        from you soon!
+                    </p>
                 </div>
-            </div>
         </div>
         <div id="projects" class="background-alt">
             <h2 class="heading">Projects</h2>
             <div class="container">
-                <div class="row project-item">
-                    <div class="col-md-6 project-image">
-                        <img src="images/cakeulator.gif" alt="" />
-                    </div>
-                    <div class="col-md-6 project-info my-auto">
+                <div class="project1-img">
+                    <img src="images/cakeulator.gif" alt="" />
+                </div>
+                    <div class="project1">
                         <h2>Cakeulator</h2>
                         <p>
                             Web app to aid in estimating cake costs for guests.
@@ -132,12 +106,10 @@
                             >Go to project</a
                         >
                     </div>
-                </div>
-                <div class="row project-item">
-                    <div class="col-md-6 project-image">
+                    <div class="project2-img">
                         <img src="images/github.png" alt="" />
                     </div>
-                    <div class="col-md-6 project-info my-auto">
+                    <div class="project2">
                         <h2>More Projects</h2>
                         <p>
                             Please view my github for other projects.
@@ -148,23 +120,6 @@
                             >View more projects</a
                         >
                     </div>
-                </div>
-                <!--<div class="row project-item">
-                    <div class="col-md-6 project-image">
-                        <img src="images/gregslist.gif" alt="" />
-                    </div>
-                    <div class="col-md-6 project-info my-auto">
-                        <h2>Greg's List</h2>
-                        <p>
-                            This is a simple hand coded craigs's list landing
-                            page.
-                        </p>
-                        <a
-                            href="https://github.com/joreilly25/gregs_list"
-                            target="_blank"
-                            >Go to Project</a
-                        >
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -197,6 +152,7 @@
                 </form>
             </div>
         </div>
+    </main>
         <footer id="copyright">
             <div class="container">
                 <div class="row">
