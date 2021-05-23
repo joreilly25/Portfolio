@@ -25,6 +25,10 @@ body {
   color: white;
 }
 
+.nav-link:hover {
+  text-shadow: 2px 1px 12px #a4d0ff;
+}
+
 #main-content {
   display: flex;
   flex-direction: column;
