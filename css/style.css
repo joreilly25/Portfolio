@@ -259,8 +259,9 @@ textarea.form-control {
 }
 
 footer {
-  background-color: #f2f2f5;
-  color: #808080;
+  background-color: #3498db;
+  /* background-color: #f2f2f5; */
+  color: #f2f2f5;
   padding: 50px 15px;
   display: flex;
   justify-content: space-evenly;
@@ -274,8 +275,8 @@ footer {
 }
 
 .toTheTop {
-  background-color: #f2f2f5;
-  color: #808080;
+  background-color: #3498db;
+  color: #f2f2f5;
   text-align: center;
   cursor: pointer;
 }
