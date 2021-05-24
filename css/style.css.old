@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: sans-serif;
 }
@@ -10,6 +9,7 @@ body {
   font-size: 24px;
   justify-content: center;
 }
+
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -24,6 +24,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .nav-link:hover {
   text-shadow: 2px 1px 12px #a4d0ff;
 }
@@ -39,11 +40,13 @@ body {
   color: #fff;
   font-family: "Open Sans", sans-serif;
 }
+
 #main-content h1 {
   text-transform: uppercase;
   font-size: 5em;
   font-weight: 700;
 }
+
 #main-content h2 {
   padding-top: 15px;
   font-size: 3em;
@@ -55,6 +58,7 @@ section {
   flex-direction: column;
   padding: 0 15px;
 }
+
 section a {
   text-decoration: none;
 }
@@ -70,6 +74,7 @@ section a {
   transition: 0.5s ease all;
   margin-top: 25px;
 }
+
 .btn-rounded-white:hover {
   color: #3498db;
   background: #fff;
@@ -84,10 +89,12 @@ section a {
   align-items: center;
   border-bottom: 1px solid #ddc9d9;
 }
+
 #aboutMe h2 {
   text-transform: uppercase;
   font-size: 2em;
 }
+
 #aboutMe p {
   font-size: 18px;
   padding: 5px;
@@ -98,11 +105,6 @@ section a {
   background: #f2f2f5;
   padding-top: 50px;
 }
-#projects .heading {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 50px;
-}
 
 .projectContainer {
   max-width: 900px;
@@ -111,17 +113,7 @@ section a {
   background-color: #f2f2f5;
 }
 
-#project1 {
-  display: grid;
-  grid-template-rows: 300px;
-  grid-template-columns: 300px 1fr;
-  grid-template-areas: "projectImg  projectInfo";
-  background-color: #fff;
-  box-shadow: 0 0 10px #ddc9d9;
-  margin-bottom: 30px;
-  border-radius: 10px;
-}
-
+#project1,
 #project2 {
   display: grid;
   grid-template-rows: 300px;
@@ -133,19 +125,28 @@ section a {
   border-radius: 10px;
 }
 
+#projects .heading {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .projectInfo {
   grid-area: projectInfo;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .projectHeader {
   grid-area: projectHeader;
   font-size: 2em;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
 }
 
 .projectDesc {
@@ -181,19 +182,13 @@ section a {
   margin-bottom: 50px;
 }
 
-input[type=email] {
+input[type="email"] {
   margin-bottom: 10px;
   background-color: #1d6fa5;
   border: none;
 }
-input[type=email]:focus {
-  background: #16527a;
-}
 
-#formmessage {
-  background: #1d6fa5;
-  border: none;
-}
+input[type="email"]:focus,
 #formmessage:focus {
   background: #16527a;
 }
@@ -211,10 +206,16 @@ input[type=email]:focus {
   border-radius: 4px;
   font-size: 16px;
 }
+
 .contact-btn:hover {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
+}
+
+#formmessage {
+  background: #1d6fa5;
+  border: none;
 }
 
 form {
@@ -226,16 +227,8 @@ form {
   align-items: center;
 }
 
-#contactform input {
-  color: #fff !important;
-  font-family: sans-serif;
-}
-
-textarea {
-  color: #fff !important;
-  font-family: sans-serif;
-}
-
+#contactform input,
+textarea,
 ::placeholder {
   color: #fff !important;
   font-family: sans-serif;
@@ -257,19 +250,21 @@ textarea {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   box-sizing: border-box;
 }
-.form-control:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
 
 textarea.form-control {
   height: auto;
   resize: none;
 }
 
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 footer {
   background-color: #3498db;
+  /* background-color: #f2f2f5; */
   color: #f2f2f5;
   padding: 50px 15px;
   display: flex;
@@ -284,7 +279,7 @@ footer {
 }
 
 .fa-envelope {
-  color: #551a8b;
+  color: rgba(85, 26, 139);
 }
 
 .toTheTop {
@@ -300,47 +295,21 @@ footer {
   color: #808080;
   text-align: right;
 }
+
 .specialThanks a {
   color: #808080;
 }
 
-blockquote {
-  margin: 0;
-}
-blockquote p {
-  padding: 15px;
-  background: #a4d0ff;
-  color: #3498db;
-  border-radius: 5px;
-  font-size: 24px;
-}
-blockquote p::before {
-  content: "“";
-}
-blockquote p::after {
-  content: "”";
-}
-
-.quote_special {
-  color: #fff;
-  font-size: 26px;
-}
-
 @media screen and (max-device-width: 812px) and (orientation: portrait) {
-  #project1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "." "projectInfo";
-  }
-
+  #project1,
   #project2 {
     padding-top: 10px;
     padding-bottom: 10px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "." "projectInfo";
+    grid-template-areas:
+      "."
+      "projectInfo";
   }
 
   .projectContainer {
@@ -359,12 +328,13 @@ blockquote p::after {
   #main-content h1 {
     font-size: 2em;
   }
-  #main-content h2 {
-    font-size: 1.5em;
-  }
 
   #aboutMe {
     padding: 0 15px;
+  }
+
+  #main-content h2 {
+    font-size: 1.5em;
   }
 
   footer {
@@ -377,6 +347,7 @@ blockquote p::after {
     text-align: center;
   }
 }
+
 @media screen and (min-device-width: 375px) and (max-device-width: 1080px) and (orientation: landscape) {
   .navbar {
     font-size: initial;
@@ -386,9 +357,11 @@ blockquote p::after {
     flex-flow: row;
     align-items: center;
   }
+
   #main-content h1 {
     font-size: 2em;
   }
+
   #main-content h2 {
     font-size: 1.3em;
   }
@@ -402,4 +375,27 @@ blockquote p::after {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #a4d0ff;
+  color: #3498db;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.quote_special {
+  color: #fff;
+  font-size: 26px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
