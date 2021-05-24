@@ -1,3 +1,6 @@
+$white-color: #fff !important;
+$cornflower-color: #a0cfee;
+$light-bg-color: #f2f2f5;
 body {
   font-family: sans-serif;
 }
@@ -18,7 +21,7 @@ body {
 }
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: $white-color;
   &:hover {
     text-shadow: 2px 1px 12px #a4d0ff;
   }
@@ -31,7 +34,7 @@ body {
   height: 100vh;
   background: linear-gradient(rgba(33, 125, 187, 0.8), rgba(33, 125, 187, 0.8)), url(/images/main-bg-orig-small.jpg);
   background-size: cover;
-  color: #fff;
+  color: $white-color;
   font-family: "Open Sans", sans-serif;
   h1 {
     text-transform: uppercase;
@@ -41,7 +44,7 @@ body {
   h2 {
     padding-top: 15px;
     font-size: 3em;
-    color: #a0cfee;
+    color: $cornflower-color;
   }
 }
 section {
@@ -56,15 +59,15 @@ section {
   display: flex;
   align-self: center;
   max-width: 200px;
-  color: #fff;
+  color: $white-color;
   padding: 15px 25px;
-  border: 3px solid #fff;
+  border: 3px solid $white-color;
   border-radius: 30px;
   transition: 0.5s ease all;
   margin-top: 25px;
   &:hover {
     color: #3498db;
-    background: #fff;
+    background: $white-color;
     text-decoration: none;
   }
 }
@@ -86,7 +89,7 @@ section {
   }
 }
 #projects {
-  background: #f2f2f5;
+  background: $light-bg-color;
   padding-top: 50px;
   .heading {
     font-size: 2em;
@@ -98,14 +101,14 @@ section {
   max-width: 900px;
   padding-bottom: 50px;
   margin: 0 auto;
-  background-color: #f2f2f5;
+  background-color: $light-bg-color;
 }
 #project1 {
   display: grid;
   grid-template-rows: 300px;
   grid-template-columns: 300px 1fr;
   grid-template-areas: "projectImg  projectInfo";
-  background-color: #fff;
+  background-color: $white-color;
   box-shadow: 0 0 10px #ddc9d9;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -115,7 +118,7 @@ section {
   grid-template-rows: 300px;
   grid-template-columns: 300px 1fr;
   grid-template-areas: "projectImg  projectInfo";
-  background-color: #fff;
+  background-color: $white-color;
   box-shadow: 0 0 10px #ddc9d9;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -154,7 +157,7 @@ section {
   flex-direction: column;
   background: #3498db;
   text-align: center;
-  color: #fff;
+  color: $white-color;
   font-size: 2em;
   padding: 50px 15px;
 }
@@ -181,7 +184,7 @@ input[type="email"] {
   width: 100%;
   height: 40px;
   margin-top: 10px;
-  background-color: #fff;
+  background-color: $white-color;
   color: #3498db;
   font-weight: bold;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -189,7 +192,7 @@ input[type="email"] {
   border-radius: 4px;
   font-size: 16px;
   &:hover {
-    color: #fff;
+    color: $white-color;
     background-color: #0069d9;
     border-color: #0062cc;
   }
@@ -204,16 +207,16 @@ form {
 }
 #contactform {
   input {
-    color: #fff !important;
+    color: $white-color;
     font-family: sans-serif;
   }
 }
 textarea {
-  color: #fff !important;
+  color: $white-color;
   font-family: sans-serif;
 }
 ::placeholder {
-  color: #fff !important;
+  color: $white-color;
   font-family: sans-serif;
 }
 .form-control {
@@ -225,7 +228,7 @@ textarea {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: $white-color;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -243,7 +246,7 @@ textarea.form-control {
 }
 footer {
   background-color: #3498db;
-  color: #f2f2f5;
+  color: $light-bg-color;
   padding: 50px 15px;
   display: flex;
   justify-content: space-evenly;
@@ -261,13 +264,13 @@ footer {
 }
 .toTheTop {
   background-color: #3498db;
-  color: #f2f2f5;
+  color: $light-bg-color;
   text-align: center;
   cursor: pointer;
 }
 .specialThanks {
   padding-top: 30px;
-  background-color: #f2f2f5;
+  background-color: $light-bg-color;
   color: #808080;
   text-align: right;
   a {
@@ -291,7 +294,7 @@ blockquote {
   }
 }
 .quote_special {
-  color: #fff;
+  color: $white-color;
   font-size: 26px;
 }
 @media screen and (max-device-width: 812px) and (orientation: portrait) {
