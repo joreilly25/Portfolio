@@ -113,6 +113,11 @@ section {
   box-shadow: 0 0 10px #ddc9d9;
   margin-bottom: 30px;
   border-radius: 10px;
+  img {
+    min-width: 300px;
+    min-height: 300px;
+    object-fit: cover;
+  }
 }
 #project2 {
   display: grid;
