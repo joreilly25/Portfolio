@@ -314,6 +314,7 @@ blockquote {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "." "projectInfo";
+    text-align: center;
   }
   .projectContainer {
     padding-right: 15px;

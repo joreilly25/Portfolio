@@ -455,6 +455,7 @@ blockquote p::after {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "." "projectInfo";
+    text-align: center;
   }
   .projectContainer {
     padding-right: 15px;
